@@ -1,6 +1,7 @@
-variable "domain.name" {
-    description = "Names of ACM "
-    type = "string"
+variable "domain_name" {
+  type = string
 }
 
-variable " "
+variable "zone_id" {
+  type = string
+}
