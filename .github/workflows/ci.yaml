@@ -16,7 +16,7 @@ jobs:
 
     defaults :
         run :
-            working-directory: modules/api-gateway 
+            working-directory: environments/${{matrix.environments}}
 
     steps:
       - name: Checkout code
