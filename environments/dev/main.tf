@@ -8,10 +8,10 @@ provider "aws" {
 module "acm" {
   source = "../../modules/acm"
 }
-module "vpc" {
-  source = "../../modules/vpc"
-}
+# module "vpc" {
+#   source = "../../modules/vpc"
+# }
 
-module "api_gateway" {
-  source = "../../modules/api-gateway"
-}
+# module "api_gateway" {
+#   source = "../../modules/api-gateway"
+# }
