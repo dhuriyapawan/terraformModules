@@ -5,8 +5,8 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
-module "amc" {
-  source = "../../modules/amc"
+module "acm" {
+  source = "../../modules/acm"
 }
 module "vpc" {
   source = "../../modules/vpc"
