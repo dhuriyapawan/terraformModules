@@ -33,7 +33,7 @@ resource "aws_route53_record" "validation" {
   records = [each.value.record]
 }
 
-resource "aws_acm_certificate_validation" "cert" {
-  certificate_arn         = aws_acm_certificate.cert.arn
-  validation_record_fqdns = [for r in aws_route53_record.validation : r.fqdn]
-}
+# resource "aws_acm_certificate_validation" "cert" {
+#   certificate_arn         = aws_acm_certificate.cert.arn
+#   validation_record_fqdns = [for r in aws_route53_record.validation : r.fqdn]
+# }
