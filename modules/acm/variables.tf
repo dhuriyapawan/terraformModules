@@ -12,7 +12,7 @@ variable "subject_alternative_names" {
   default     = []
 }
 
-variable "hosted_zone_name" {
+variable "zone_name" {
   description = "Route53 hosted zone name"
   type        = string
   default    = null
